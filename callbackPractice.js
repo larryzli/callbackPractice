@@ -117,7 +117,7 @@ each(names, function(item, indice){
 const getUserById = (objArr, id, cb) => {
   objArr.forEach((e, i, self) => {
     if (e.id === id){
-      cb(self[i]);
+      cb(e);
     }
   })
 };
